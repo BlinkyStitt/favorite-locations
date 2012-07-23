@@ -3,6 +3,7 @@
 from flask.ext.script import Manager
 
 from application import app, db
+from application.models import Location
 
 manager = Manager(app)
 
@@ -14,6 +15,11 @@ def setupdb():
     """
     db.drop_all()
     db.create_all()
+
+    # scaffold some basic data
+    db.session.add(Location(name='Uber',address='800 Market St., San Francisco, CA'))
+    db.session.add(Location(name='Home',address='3870 Sacramento Dr., San Francisco, CA'))
+    db.session.commit()
 
 
 if __name__ == '__main__':
