@@ -1,0 +1,55 @@
+/* fix twitter bootstrap header */
+body {
+    padding-top: 60px;
+    background: #F8F8F8;
+}
+
+.well {
+    background: #D0D0D0;
+}
+
+h3 small {
+    color: #383838;
+}
+
+/* fix twitter bootstrap breaking google maps */
+div.map img {
+    max-width: none;
+}
+div.map label {
+    width: auto; display:inline;
+}
+
+/* actual styling */
+div.map
+{
+    height: 600px;
+    border: 1px solid black;
+}
+
+form.add-favorite input {
+    width: 100%;
+}
+
+ul.locations {
+    margin-left: 0;
+    list-style-type: none;
+}
+
+ul.locations li.editing .edit {
+    display: block;
+    width: 100%;
+}
+
+ul.locations li.editing .view {
+    display: none;
+}
+
+ul.locations li .view {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+ul.locations li .edit {
+    display: none;
+}
