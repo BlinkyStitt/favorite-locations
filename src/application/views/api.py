@@ -27,9 +27,6 @@ def location_index():
 def location_create():
     """
     Create a new location
-
-
-    todo: potentially add filtering or sorting to the query
     """
     # backbone sends the data as a JSON string in post['model']
     data = json.loads(request.form['model'])
