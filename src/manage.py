@@ -18,7 +18,7 @@ def setupdb():
 
     # scaffold some basic data
     db.session.add(Location(name='Uber',address='800 Market St., San Francisco, CA'))
-    db.session.add(Location(name='Home',address='3870 Sacramento Dr., San Francisco, CA'))
+    db.session.add(Location(name='Home',address='Sacramento St., San Francisco, CA'))
     db.session.commit()
 
 
